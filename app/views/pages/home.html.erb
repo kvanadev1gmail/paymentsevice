@@ -2,13 +2,7 @@
 
 
 <body>
-<div id="content" class="container">
-    <header id="content-header">
-        <div id="price-container">
-          <span class="glyphicon glyphicon-tag"></span><span class="price">$4.99</span>
-        </div>
-        <img id="content-header-img" src="img/header-image.jpg" alt="Learn Growth Hacking">
-    </header>
+
     <section id="content-details" class="row clearfix">
         <article id="details-article" class="col-sm-8">
             <h1 id="article-title">Growth Hacking <span class="font-weight-light">Crash Course</span></h1>
@@ -39,8 +33,7 @@
     </section>
 </div>
 <footer id="site-footer">
-Made by <a href="http://onemonth.com" target="_blank"><img id="one-month-footer-logo" src="img/one-month-logo.svg" alt="One Month"></a>
-</footer>
+Made by <a href="http://onemonth.com" target="_blank"><%= image_tag('one-month-logo.svg', id: "content-head-img", alt: "Learn Growth Hacking") %></a></footer>
 
 <!-- Modal -->
 <div class="modal fade" id="author-modal">
@@ -58,14 +51,15 @@ Made by <a href="http://onemonth.com" target="_blank"><img id="one-month-footer-
                 <p>Follow me on Twitter <a href="https://twitter.com/mattangriffel" target="_blank">@mattangriffel</a></p>
             </div>
             <div id="modal-right" class="pull-right">
-                <img src="img/teacher-image.jpg" alt="Mattan Griffel">
+                <!-- <img src="img/teacher-image.jpg" alt="Mattan Griffel"> -->
+                <%= image_tag('teacher-image.jpg', alt: 'Mattan Griffel') %>
             </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
-  </div>
+
 </div>
 
 <!-- Scripts -->
