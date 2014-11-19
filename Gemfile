@@ -21,6 +21,10 @@ gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 gem "figaro"
 
+#add letter opener for hand
+
+gem "letter_opener", group: :development
+
 
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
